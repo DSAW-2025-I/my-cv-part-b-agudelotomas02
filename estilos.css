@@ -1,0 +1,110 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background: lightgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+} 
+
+#contenedor{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    /*align-items: center;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px auto; /*centra  en la página*/
+    
+}
+
+header {
+    background: navy;
+    height:150px;
+    width:100%;
+    margin:0%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size:x-large;
+}
+
+
+.item1 {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+    width: 100%; /* Ocupa todo el ancho de #contenedor */
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    flex-grow:1;/* Hace que la sección de información personal ocupe solo el espacio necesario */
+    background: lightgoldenrodyellow;
+    padding-left: 115px;
+    height:auto;
+    justify-content: space-evenly;
+}
+
+.article{
+    font-style: oblique;
+    font-size: 18px;
+    flex-grow:1;
+    padding: 3px;
+}
+
+figure{
+    flex-grow: 1; /* Hace que la imagen se expanda en altura */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px;
+    background: whitesmoke;
+}
+
+img {
+    max-width: 300px;
+    height:100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    
+}
+
+.item2{
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+    width: 100%; /* Ocupa todo el ancho de #contenedor */
+}
+
+#educacion{
+    font-style: oblique;
+    font-size: 16px;
+    flex-grow:1;
+    padding: 3px;
+    padding-left: 40px;
+    background: burlywood;
+}
+
+#experiencia{
+    font-style: oblique;
+    font-size: 16px;
+    flex-grow:1;
+    padding-left: 40px;
+    background: rgb(128, 187, 128);
+}
+
+footer{
+    text-align: center;
+    line-height: 100px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: rgb(212, 174, 248);
+    height: 100px;
+}
